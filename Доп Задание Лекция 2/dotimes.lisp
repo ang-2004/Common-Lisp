@@ -1,0 +1,5 @@
+(defun factorial-dotimes (n)
+  (let ((result 1))
+    (dotimes (i n result)
+      (setq result (* result (+ i 1))))))
+(time (factorial-prog 100000))
