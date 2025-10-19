@@ -1,0 +1,10 @@
+(defun factorial-prog (n)
+(prog (result i)
+(setq result 1)
+(setq i 1)
+loop
+(cond ((> i n) (return result)))
+(setq result (* result i))
+(setq i (+ i 1))
+(go loop)))
+(time (factorial-prog 100000))
