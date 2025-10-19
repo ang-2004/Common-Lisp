@@ -1,0 +1,5 @@
+(defun factorial-do* (n)
+(do* ((result 1 (* result i))
+(i 1 (+ i 1)))
+((> i n) result)))
+(time (factorial-prog 100000))
